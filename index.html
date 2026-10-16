@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hearts"></div>
+  <div class="lab-overlay" aria-hidden="true">
+    <span class="float-eq">E = mc²</span>
+    <span class="float-eq">H₂O + ♥</span>
+    <span class="float-eq">∑ love = ∞</span>
+    <span class="float-eq">C₁₃H₁₈O₂</span>
+    <span class="float-eq">Δt → forever</span>
+  </div>
+  <main>
+    <header class="hero">
+      <div class="elements" aria-hidden="true">
+        <span class="el"><small>1</small><b>Lo</b><small>ve</small></span>
+        <span class="el"><small>13</small><b>Vi</b><small>ta</small></span>
+        <span class="el"><small>14</small><b>Joy</b><small>∞</small></span>
+      </div>
+      <h1>Happy Birthday</h1>
+      <p class="sub">To the love of my life 💖</p>
+      <p class="note">Today is all about you — your smile, your laugh, and every little thing that makes you, you. I love you more than words can say.</p>
+    </header>
+
+    <section class="card">
+      <h2>Choose Your Song</h2>
+      <div class="options">
+        <button class="opt" data-song="1">Song 1</button>
+        <button class="opt" data-song="2">Song 2</button>
+        <button class="opt" data-song="3">Song 3</button>
+      </div>
+      <div id="player" class="hidden">
+        <audio id="audio" controls preload="metadata"></audio>
+        <h3>Lyrics</h3>
+        <pre id="lyrics"></pre>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Redeem a Code</h2>
+      <form id="redeem">
+        <input id="code" type="text" placeholder="Enter your secret code" autocomplete="off" />
+        <button type="submit">Redeem</button>
+      </form>
+      <div id="result" class="hidden"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
